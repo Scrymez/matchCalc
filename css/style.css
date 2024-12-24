@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body{
+    background-color: rgba(33, 37, 38, .7);
+}
 .container {
     margin: 0 auto;
     margin-top: 2.5%;
     width: 375px;
     height: 812px;
     background: rgba(90,9,121, .7);
-    background: linear-gradient(129deg, rgba(90,9,121,0) 49%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(129deg, rgba(90,9,121,0) 15%, rgba(0,212,255,1) 100%);
     backdrop-filter: blur(10px);
     border: 1px solid #5cdeff;
     border-radius: 10px;
@@ -14,15 +17,15 @@
 }
 
 .resultCalc{
-    margin-left: 167px;
+    margin-right: 18px;
     margin-top: 138px;
     display: flex;
     flex-direction: column;
     align-items: end;
     position: relative;
-    border: 1px solid #5cdeff;
-    height: 114px;
-    width: 200px;
+    /* border: 1px solid #5cdeff; */
+    height: 80px;
+    width: auto;
 }
 .fontsPoppins{
     font-family: 'Poppins' , sans-serif;
@@ -30,9 +33,116 @@
 .inputNum{
     font-size: 24px;
     font-weight: 500;
+    color: #818181;
 }
 .inputRes{
     margin-top: 6px;
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 500;   
+    color: 000000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(59, 59, 59);
+}
+span{
+    color: #109DFF;
+}
+
+.formCalc{
+    margin-top: 78px;
+    display: flex;
+    justify-content: center;
+}
+.keyboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.keyboardBlockOne{
+    display: flex;
+    
+}
+
+.btnBlockOne{
+    margin-right: 20px;
+    width: 62px;
+    height: 40px;
+    border-radius: 16px;
+    background-color: rgb(155, 217, 234);
+    opacity: .7;
+    border: 1px solid #f7f7f7;
+    color: #ffffff;
+    
+}
+.btnBlockOne:first-child{
+    margin-left: 34px;
+}
+.btnBlockOne:last-child{
+    margin-right: 34px;
+}
+
+.btnBlockTwo{
+    width: 62px;
+    height: 62px;
+    border-radius: 16px;
+    background-color: rgb(155, 217, 234);
+    opacity: .7;
+    border: 1px solid #f7f7f7;
+    color: #ffffff;
+}
+
+.btnBlockTree{
+    width: 62px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: rgb(155, 217, 234);
+    opacity: .7;
+    border: 1px solid #f7f7f7;
+    color: #ffffff;
+}
+
+.keyboardBlockOne{
+    display: flex;
+    justify-content: space-around;
+}
+
+.keyboardBlockTwo{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 82px 82px 82px 82px;
+    grid-template-rows: 84px 76px 76px 92px;
+    justify-items: center;
+    
+}
+
+.add, .eq{
+    height: 96px;
+}
+.eq{
+    margin-top: 55px;
+    background-color: #19ACFF;
+    box-shadow: inset -10px 10px 10px rgba(0,212,255,.5);
+}
+.add{
+    margin-top: 10px;
+}
+
+.zero{
+    width: 144px;
+    margin-left: 90px;
+    
+}
+.point {
+    margin-left: 171px;
+}
+
+.btnBlockTree:hover:active{
+    background-color: rgba(70, 157, 255, 0.5);
+}
+
+.btnBlockOne:hover:active{
+    background-color: rgba(70, 157, 255, 0.5);
+}
+
+.btnBlockTwo:hover:active{
+    background-color: rgba(70, 157, 255, 0.5);
 }
